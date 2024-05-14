@@ -1,0 +1,12 @@
+﻿.travel-list {
+  padding: 20px;
+}
+
+.travel-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.travel-list li {
+  margin: 10px 0;
+}
