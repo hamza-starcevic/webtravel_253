@@ -1,3 +1,22 @@
 ﻿.navbar {
-  margin-bottom: 20px;
+  background-color: #343a40 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #adb5bd !important;
+}
+
+.navbar .btn-link {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0;
+}
+
+.navbar .btn-link:hover {
+  color: #adb5bd !important;
 }

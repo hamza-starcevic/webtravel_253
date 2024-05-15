@@ -1,3 +1,12 @@
 ﻿.user-dashboard {
   padding: 20px;
 }
+
+.user-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-dashboard .btn {
+  margin-top: 20px;
+}

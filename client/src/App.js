@@ -1,7 +1,7 @@
-import React from "react";
-import Routing from "./Routing";
-import Navbar from "./Navbar/Navbar";
-import "./App.css";
+import React from 'react';
+import Navbar from './Navbar/Navbar';
+import Routing from './Routing';
+import './App.css';
 
 const App = () => {
   return (

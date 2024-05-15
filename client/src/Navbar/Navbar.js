@@ -1,7 +1,7 @@
-﻿import React from "react";
-import { Link } from "react-router-dom";
-import AuthService from "../services/authService";
-import "./Navbar.css";
+﻿import React from 'react';
+import { Link } from 'react-router-dom';
+import AuthService from '../services/authService';
+import './Navbar.css';
 
 const Navbar = () => {
   const isAuthenticated = AuthService.isAuthenticated();
