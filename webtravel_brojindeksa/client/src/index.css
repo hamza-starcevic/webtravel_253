@@ -1,68 +1,184 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+﻿/* Reset some default browser styling */
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container to center content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+  background: linear-gradient(to right, #00223e, #4ca1af);
+  /* Gradient from marine dark blue to turquoise */
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+  color: white;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d1e8e2;
+  /* Lighter shade on hover */
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav button:hover {
+  color: #d1e8e2;
+  /* Lighter shade on hover */
+}
+
+/* Form styling */
+/* Additional styling for the AdminDashboard */
+form {
+  margin-top: 20px;
+}
+
+form input,
+form button {
+  display: block;
+  margin: 10px 0;
+}
+
+form input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007b7f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f60;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  margin-left: 10px;
+  padding: 10px 20px;
+  /* Increase padding for wider button */
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+button:hover {
+  background-color: #c9302c;
+  color: #fff;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007b7f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005f60;
+  /* Slightly darker shade on hover */
+}
+
+/* Header styling */
+h1,
+h2 {
+  margin: 20px 0;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  color: white;
+}
+
+ul li {
+  background: #42484b;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
   }
-  a:hover {
-    color: #747bff;
+
+  nav li {
+    margin: 10px 0;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.container {
+  margin: 2%;
 }

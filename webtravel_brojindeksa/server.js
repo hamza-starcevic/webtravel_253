@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // DB Config
-const db = 'mongodb://localhost:27017/dbtravel_brojindeksa';
+const db = 'mongodb://starcevichamza21:kenansin@ac-8xl97pk-shard-00-02.hikdlwd.mongodb.net:27017,ac-8xl97pk-shard-00-00.hikdlwd.mongodb.net:27017,ac-8xl97pk-shard-00-01.hikdlwd.mongodb.net:27017/?authSource=admin&replicaSet=atlas-6nxnfp-shard-0&retryWrites=true&w=majority&appName=webtravel&ssl=true';
 
 // Connect to MongoDB
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
